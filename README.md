@@ -141,6 +141,13 @@ This can be done either by using the internal daemon or cron.
 
    sudo systemctl enable miflora.service
    ```
+1. Upstart service - on upstart powered systems the **recommended** option
+   
+   ```shell
+   sudo cp /opt/miflora-mqtt-daemon/miflora.service.upstart /etc/systemd/system/miflora.service
+
+   sudo service miflora start
+   ```
 
 1. Screen Shell - Run the program inside a [screen shell](https://www.howtoforge.com/linux_screen):
    
